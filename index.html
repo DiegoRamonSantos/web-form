@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="web form created with html5, css3 and javascript">
+    <title>Register Web Form</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-title">
+            <h1>sign up</h1>
+        </div>
+        <form action="#" id="form" class="form">
+            <div class="input-container">
+                <label for="firstname">first name</label>
+                <input type="text" id="firstname" name="firstname" maxlength="500" placeholder="type your first name">
+                <span>input status message</span>
+            </div>
+            <div class="input-container">
+                <label for="lastname">last Name</label>
+                <input type="text" id="lastname" name="lastname" maxlength="500" placeholder="type your last name">
+                <span>input status message</span>
+            </div>
+            <div class="input-container">
+                <label for="email">email</label>
+                <input type="email" id="email" name="email" placeholder="type your email">
+                <span>input status message</span>
+            </div>
+            <div class="input-container">
+                <label for="phone">phone</label>
+                <input type="tel" name="phone" id="phone" placeholder="type your phone number">
+                <span>input status message</span>
+            </div>
+            <div class="input-container">
+                <label for="birthday">birthday</label>
+                <input type="date" id="birthday" name="birthday" min="1900-01-01" max="3000-12-31">
+                <span>input status message</span>
+            </div>
+            <div class="input-container">
+                <label for="gender">gender</label>
+                <select name="gender" id="gender">
+                    <option value="select">select gender</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="others">others</option>
+                    <option value="prefer-not-say">prefer not to say</option>
+                </select>
+                <span>input status message</span>
+            </div>
+            <div class="input-container">
+                <label for="password">password</label>
+                <input type="password" id="password" name="password" placeholder="type your password">
+                <span>input status message</span>
+            </div>
+            <div class="input-container">
+                <label for="confirm-password">password confirmation</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="confirm your password">
+                <span>input status message</span>
+            </div>
+        </form>
+        <div class="btn-group">
+            <button type="submit" form="form" class="btn-submit">submit</button>
+            <button type="reset" form="form" class="btn-reset">reset</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
