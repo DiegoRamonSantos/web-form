@@ -117,6 +117,8 @@ function checkInputs() {
 
     if (formIsValid) {
         alert("Registration completed successfully!");
+        document.querySelector(".container").style.display = "none";
+        document.getElementById("success-message").style.display = "flex";
     }
 }
 
@@ -142,3 +144,4 @@ resetButton.addEventListener("click", () => {
         container.querySelector("span").innerText = "input status message";
     });
 });
+
